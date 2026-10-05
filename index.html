@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="login-page">
+  <div class="hero-shade"></div>
+  <header class="brand">
+    <div class="flame">ϟ</div>
+    <div>
+      <div class="brand-name">SPIRIT</div>
+      <div class="brand-sub">UNIVERSITY</div>
+      <div class="brand-tag">KNOWLEDGE · CREATIVITY · BETTER TOMORROW</div>
+    </div>
+  </header>
+
+  <main class="login-card-wrap">
+    <section class="login-card">
+      <div class="portal-mark">SU</div>
+      <p class="eyebrow">CLASSROOM BOOKING PORTAL</p>
+      <h1>Book a classroom</h1>
+      <p class="muted">Reserve classrooms quickly and securely through the Spirit University booking portal.</p>
+
+      <a class="primary-btn" href="{{ url_for('login') }}">
+        <span>Sign in</span><span>→</span>
+      </a>
+
+      <a class="secondary-btn" href="{{ url_for('register') }}">
+        Create a student account
+      </a>
+
+      <div class="security-note">
+        <span>✓</span>
+        <div><b>Smart classroom booking</b><br>
+        Capacity-aware reservations with a maximum of 5 seats per booking.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="login-footer">© 2026 Spirit University · Smart Campus Classroom Booking</footer>
+</div>
+{% endblock %}
